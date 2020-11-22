@@ -1,0 +1,54 @@
+$theme-colors: (
+  "primary": #212F3C,
+  "secondary": #34495E,
+  "paid": #E74C3C,
+  "free": #27AE60,
+  "offer": #2471A3,
+  "recommended": #D68910 
+);
+
+html {
+    scroll-behavior: smooth;
+}
+
+.wish {
+    align-items: center;
+    display: flex;
+    text-align: center;
+        &:before {
+            border-top: .0625em solid;
+            content: "";
+            flex: 1;
+            margin: 0 .5em;
+        }
+        &:after {
+            border-top: .0625em solid;
+            content: "";
+            flex: 1;
+            margin: 0 .5em;
+        }
+}
+
+.example {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+        a {
+            margin-left: 1.3em;
+            margin-right: 1.3em;
+            margin-top: 1em;
+        }
+}
+
+footer {
+    overflow: hidden;
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
